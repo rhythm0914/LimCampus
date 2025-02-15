@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Java</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Java Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#syntax">Basic Syntax</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to Java</h2>
+            <p>Java is a high-level, object-oriented programming language developed by Sun Microsystems. 
+               It is widely used for building web applications, desktop software, and mobile applications.</p>
+            <p>Key Features:</p>
+            <ul>
+                <li>Platform Independent (Write Once, Run Anywhere)</li>
+                <li>Object-Oriented</li>
+                <li>Robust and Secure</li>
+                <li>Multi-threaded</li>
+            </ul>
+        </section>
+
+        <section id="syntax">
+            <h2>Basic Java Syntax</h2>
+            <p>Java programs consist of classes and methods. Here’s a simple "Hello, World!" program:</p>
+            <pre>
+                <code>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+                </code>
+            </pre>
+        </section>
+
+        <section id="examples">
+            <h2>Java Example Programs</h2>
+
+            <div class="example">
+                <h3>1. Simple Addition</h3>
+                <pre>
+                    <code>
+public class Addition {
+    public static void main(String[] args) {
+        int a = 5, b = 10;
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
+    }
+}
+                    </code>
+                </pre>
+            </div>
+
+            <div class="example">
+                <h3>2. Check Even or Odd</h3>
+                <pre>
+                    <code>
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        if (num % 2 == 0) {
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+        scanner.close();
+    }
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Learn More</h2>
+            <p>Explore Java further with these resources:</p>
+            <ul>
+                <li><a href="https://docs.oracle.com/en/java/">Official Java Documentation</a></li>
+                <li><a href="https://www.w3schools.com/java/">W3Schools Java Tutorial</a></li>
+                <li><a href="https://www.javatpoint.com/java-tutorial">JavaTPoint Java Guide</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn Java | Made for beginners</p>
+    </footer>
+</body>
+</html>

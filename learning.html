@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Materials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+         <img src="logo.png" alt="Logo" class="logo-img">
+        <span class="icon">Lim</span> 
+        <span class="brand">Campus</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learning.html">Learn HTML</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="buttons">
+            <a href="signup.html"><button class="sign-up">SIGN UP</button></a>
+            <a href="login.html"><button class="login">LOGIN</button></a>
+        </div>
+</header>
+
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It uses tags to structure content.</p>
+        </section>
+
+
+        <section id="basic-tags">
+            <h2>Basic HTML Tags</h2>
+            <p>Here are some fundamental HTML tags:</p>
+            <pre>
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;
+&lt;img src="image.jpg" alt="Image description"&gt;
+            </pre>
+        </section>
+
+
+        <section id="forms">
+            <h2>HTML Forms</h2>
+            <p>Forms allow users to input data:</p>
+            <pre>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+
+
+        <section id="practice" class="practice">
+            <h2>Practice</h2>
+            <p>Try writing your own HTML in the editor below:</p>
+            <textarea id="editor"></textarea>
+            <button onclick="runCode()">Run</button>
+            <iframe id="output"></iframe>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 HTML Learning Platform</p>
+    </footer>
+
+
+    <script>
+        function runCode() {
+            let code = document.getElementById("editor").value;
+            let iframe = document.getElementById("output").contentWindow.document;
+            iframe.open();
+            iframe.write(code);
+            iframe.close();
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+
